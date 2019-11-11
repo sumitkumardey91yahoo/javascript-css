@@ -1,0 +1,17 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    flex: 1;
+}
+.quantity {
+    flex: 1;
+}
+
+.price {
+    flex: 1;
+}
+.action {
+    flex: inherit;
+}

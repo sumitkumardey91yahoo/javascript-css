@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart-item.css"/>
+    <script>
+      function printVal(e) {
+        console.log("e", e.target.parentNode.parentNode.childNodes[5].innerText)
+        console.log("e", e.target.parentNode.parentElement.childNodes)
+
+        }
+    </script>
+</head>
+<body>
+    <div class="cartList">
+        <div class="item">
+            <div class="title">
+                mongo
+            </div> 
+            <div class="quantity">
+              1
+            </div> 
+            <div class="price">
+               $20
+            </div> 
+            <div class="action">
+                <button type="button" class="button">delete</button>
+            </div> 
+        </div>
+        <div class="item">
+            <div class="title">
+                apple
+            </div> 
+            <div class="quantity">
+                1
+            </div> 
+            <div class="price">
+                $40
+            </div> 
+            <div class="action">
+                    <button type="button" class="button">delete</button>
+                </div> 
+        </div>
+
+        <div class="item">
+            <div class="title">
+                orange
+            </div> 
+            <div class="quantity">
+                5
+            </div> 
+            <div class="price">
+                $45
+            </div> 
+            <div class="action">
+                    <button type="button" class="button" >delete</button>
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="item">
+            <div class="title">
+                orange
+            </div> 
+            <div class="quantity">
+                5
+            </div> 
+            <div class="price">
+                $45
+            </div> 
+            <div class="action">
+                    <button type="button" class="button-demo" onclick="printVal(event)" >delete</button>
+            </div> 
+</div>
+</body>
+<script src="./cart-item.js"></script>
+</html>
